@@ -15,9 +15,10 @@ map:
     center:
       lat: 59.373807
       lng: 16.51775
-    zoom: 14
-    minZoom: 10
-    maxZoom: 17
+    zoom: 16
+    minZoom: 17
+    maxZoom: 21
+    maxBounds: [59.376655,16.511246],[59.37108,16.52264]
   base_layer:
     url: http://{s}.tiles.mapbox.com/v3/openplans.map-dmar86ym/{z}/{x}/{y}.png
     attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
