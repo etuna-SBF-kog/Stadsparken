@@ -76,28 +76,23 @@ place:
   add_button_label: _(Lägg till plats)
   action_text: _(added)
   title: _(Vad ska finnas här?)
-  action_text: _(created)
+  action_text: _(skapad)
   anonymous_name: _(Someone)
-  submit_button_label: _(Submit)
+  submit_button_label: _(Skicka)
   items:
-    - prompt: _(Location Name)
+    - prompt: _(Rubrik)
       type: text
       name: name
       attrs:
         - key: placeholder
-          value: _(Location Name)
+          value: _(skriv här)
         - key: size
           value: 30
-    - prompt: _(Location Type)
-      type: select
-      options:
-        - label: _(Landmark)
-          value: landmark
-        - label: _(Park)
-          value: park
-        - label: _(School)
-          value: school
-      name: location_type
+    - type: hidden
+          name: location_type
+        - key: value
+          value: förslag
+
     - prompt: _(Image)
       inputfile_label: _(Add an Image)
       type: file
