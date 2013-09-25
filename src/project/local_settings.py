@@ -11,7 +11,7 @@ TEMPLATE_DEBUG = DEBUG
 SHAREABOUTS = {
   'FLAVOR': 'default_config',
   'DATASET_ROOT': 'http://api.shareabouts.org/api/v1/Eskilstuna/datasets/stadsparken/',
-  'DATASET_KEY': 'ersätt med rätt nyckel',
+  'DATASET_KEY': 'YjljZmQzYjdjOTNkYjUyNjhiNzU3MmM4',
 }
 
 #SHAREABOUTS = {
