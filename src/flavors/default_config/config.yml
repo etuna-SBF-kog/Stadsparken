@@ -95,7 +95,6 @@ place:
     - prompt: _(Beskrivning)
       type: textarea
       name: description
-      optional: true
       attrs:
         - key: placeholder
           value: _(Description...)
@@ -116,7 +115,14 @@ place:
           value: _(Name)
         - key: size
           value: 30
-
+    - prompt:_(e-mail)
+      type: text
+      name: private-submitter_email
+          optional: true
+    - prompt:_(telefon)
+      type: text
+      name: private-submitter_phone
+      optional: true
 survey:
   submission_type: comments
 
