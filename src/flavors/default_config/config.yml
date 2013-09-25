@@ -15,9 +15,10 @@ map:
     center:
       lat: 59.373807
       lng: 16.51775
-    zoom: 14
-    minZoom: 10
-    maxZoom: 17
+    zoom: 16
+    minZoom: 17
+    maxZoom: 21
+    maxBounds: [ [59.376655,16.511246], [59.37108,16.52264] ]
   base_layer:
     url: http://{s}.tiles.mapbox.com/v3/openplans.map-dmar86ym/{z}/{x}/{y}.png
     attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
@@ -72,40 +73,40 @@ activity:
 
 place:
   adding_supported: true
-  add_button_label: _(Add a Place)
+  add_button_label: _(Lägg till plats)
   action_text: _(added)
-  title: _(Tell us more...)
-  action_text: _(created)
+  title: _(Vad ska finnas här?)
+  action_text: _(skapad)
   anonymous_name: _(Someone)
-  submit_button_label: _(Submit)
+  submit_button_label: _(Skicka)
   items:
-    - prompt: _(Location Name)
+    - prompt: _(Rubrik)
       type: text
       name: name
       attrs:
         - key: placeholder
-          value: _(Location Name)
+          value: _(skriv här)
         - key: size
           value: 30
-    - prompt: _(Location Type)
-      type: select
-      options:
-        - label: _(Landmark)
-          value: landmark
-        - label: _(Park)
-          value: park
-        - label: _(School)
-          value: school
-      name: location_type
+    - type: hidden
+          name: location_type
+        - key: value
+          value: förslag
+    - prompt: _(Beskrivning)
+      type: textarea
+      name: description
+      attrs:
+        - key: placeholder
+          value: _(Description...)
     - prompt: _(Image)
-      inputfile_label: _(Add an Image)
+      inputfile_label: _(Lägg till bild)
       type: file
       name: my_image
       optional: true
       attrs:
         - key: accept
           value: image/*
-    - prompt: _(Your Name)
+    - prompt: _(Namn)
       type: text
       name: submitter_name
       optional: true
@@ -114,14 +115,14 @@ place:
           value: _(Name)
         - key: size
           value: 30
-    - prompt: _(Description)
-      type: textarea
-      name: description
+    - prompt:_(e-mail)
+      type: text
+      name: private-submitter_email
+          optional: true
+    - prompt:_(telefon)
+      type: text
+      name: private-submitter_phone
       optional: true
-      attrs:
-        - key: placeholder
-          value: _(Description...)
-
 survey:
   submission_type: comments
 
