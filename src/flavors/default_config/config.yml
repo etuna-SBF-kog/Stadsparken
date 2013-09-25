@@ -92,16 +92,22 @@ place:
           name: location_type
         - key: value
           value: förslag
-
+    - prompt: _(Beskrivning)
+      type: textarea
+      name: description
+      optional: true
+      attrs:
+        - key: placeholder
+          value: _(Description...)
     - prompt: _(Image)
-      inputfile_label: _(Add an Image)
+      inputfile_label: _(Lägg till bild)
       type: file
       name: my_image
       optional: true
       attrs:
         - key: accept
           value: image/*
-    - prompt: _(Your Name)
+    - prompt: _(Namn)
       type: text
       name: submitter_name
       optional: true
@@ -110,13 +116,6 @@ place:
           value: _(Name)
         - key: size
           value: 30
-    - prompt: _(Description)
-      type: textarea
-      name: description
-      optional: true
-      attrs:
-        - key: placeholder
-          value: _(Description...)
 
 survey:
   submission_type: comments
