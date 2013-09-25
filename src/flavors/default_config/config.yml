@@ -73,9 +73,9 @@ activity:
 
 place:
   adding_supported: true
-  add_button_label: _(Add a Place)
+  add_button_label: _(Lägg till plats)
   action_text: _(added)
-  title: _(Tell us more...)
+  title: _(Vad ska finnas här?)
   action_text: _(created)
   anonymous_name: _(Someone)
   submit_button_label: _(Submit)
