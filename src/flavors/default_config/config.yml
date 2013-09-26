@@ -73,24 +73,25 @@ activity:
 
 place:
   adding_supported: true
-  add_button_label: _(Lägg till plats)
-  action_text: _(förslaget tillagt)
-  title: _(Ge förslag:)
-  action_text: _(skapad)
-  anonymous_name: _(Någon)
-  submit_button_label: _(Skicka)
+  add_button_label: _(Nytt förslag)
+  action_text: _(lagt till förslaget)
+  title: _(Berätta mer......)
+  action_text: _(förlsaget skapat)
+  anonymous_name: _(någon)
+  submit_button_label: _(skicka)
   items:
     - prompt: _(Rubrik)
       type: text
       name: name
       attrs:
         - key: placeholder
-          value: _(Rubrik på förslaget)
+          value: _(skriv rubrik på ditt förslag här)
         - key: size
           value: 30
     - type: hidden
           name: location_type
-        - key: value
+          attrs:
+          - key: value
           value: landmark
     - prompt: _(Beskrivning)
       type: textarea
@@ -98,7 +99,7 @@ place:
       attrs:
         - key: placeholder
           value: _(Skriv ditt förslag här)
-    - prompt: _(Image)
+    - prompt: _(Bild)
       inputfile_label: _(Lägg till bild)
       type: file
       name: my_image
@@ -115,19 +116,19 @@ place:
           value: _(Namn)
         - key: size
           value: 30
-    - prompt:_(e-mail)
+    - prompt:_(E-mail)
       type: text
       name: private-submitter_email
           optional: true
-            attrs:
-        - key: placeholder
+          attrs:
+          - key: placeholder
           value: _((frivilligt))    
     - prompt:_(telefon)
       type: text
       name: private-submitter_phone
       optional: true
       attrs:
-        - key: placeholder
+          - key: placeholder
           value: _((frivilligt)) 
 survey:
   submission_type: comments
