@@ -85,19 +85,19 @@ place:
       name: name
       attrs:
         - key: placeholder
-          value: _(skriv här)
+          value: _(Rubrik på förslaget)
         - key: size
           value: 30
     - type: hidden
           name: location_type
         - key: value
-          value: förslag
+          value: landmark
     - prompt: _(Beskrivning)
       type: textarea
       name: description
       attrs:
         - key: placeholder
-          value: _(Description...)
+          value: _(Skriv ditt förslag här)
     - prompt: _(Image)
       inputfile_label: _(Lägg till bild)
       type: file
@@ -112,17 +112,23 @@ place:
       optional: true
       attrs:
         - key: placeholder
-          value: _(Name)
+          value: _(Namn)
         - key: size
           value: 30
     - prompt:_(e-mail)
       type: text
       name: private-submitter_email
           optional: true
+            attrs:
+        - key: placeholder
+          value: _((frivilligt))    
     - prompt:_(telefon)
       type: text
       name: private-submitter_phone
       optional: true
+      attrs:
+        - key: placeholder
+          value: _((frivilligt)) 
 survey:
   submission_type: comments
 
