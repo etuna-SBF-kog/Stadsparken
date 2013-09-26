@@ -89,7 +89,7 @@ place:
         - key: size
           value: 30
     - type: hidden
-          name: location_type
+          name: place_type
           attrs:
           - key: value
           value: landmark
