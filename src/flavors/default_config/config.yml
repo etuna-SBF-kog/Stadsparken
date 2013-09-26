@@ -74,10 +74,10 @@ activity:
 place:
   adding_supported: true
   add_button_label: _(Lägg till plats)
-  action_text: _(added)
-  title: _(Vad ska finnas här?)
+  action_text: _(förslaget tillagt)
+  title: _(Ge förslag:)
   action_text: _(skapad)
-  anonymous_name: _(Someone)
+  anonymous_name: _(Någon)
   submit_button_label: _(Skicka)
   items:
     - prompt: _(Rubrik)
