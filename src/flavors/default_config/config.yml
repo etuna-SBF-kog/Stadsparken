@@ -88,11 +88,6 @@ place:
           value: _(skriv rubrik på ditt förslag här)
         - key: size
           value: 30
-    - type: hidden
-          name: place_type
-          attrs:
-          - key: value
-          value: landmark
     - prompt: _(Beskrivning)
       type: textarea
       name: description
