@@ -114,9 +114,9 @@ place:
     - prompt:_(E-mail)
       type: text
       name: private-submitter_email
-          optional: true
-          attrs:
-          - key: placeholder
+      optional: true
+      attrs:
+        - key: placeholder
           value: _((frivilligt))    
     - prompt:_(telefon)
       type: text
@@ -124,7 +124,7 @@ place:
       optional: true
       attrs:
           - key: placeholder
-          value: _((frivilligt)) 
+            value: _((frivilligt)) 
 survey:
   submission_type: comments
 
